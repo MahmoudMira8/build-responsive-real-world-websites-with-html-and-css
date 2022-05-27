@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container--1 .el--1 {
+  background-color: blueviolet;
+}
+.container--1 .el--2 {
+  background-color: orangered;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.container--1 .el--3 {
+  background-color: green;
+  /*height: 150px;*/
+}
+.container--1 .el--4 {
+  background-color: goldenrod;
+  grid-column: 1 / span 3;
+}
+.container--1 .el--5 {
+  background-color: palevioletred;
+}
+.container--1 .el--6 {
+  background-color: steelblue;
+}
+.container--1 .el--7 {
+  background-color: yellow;
+}
+.container--1 .el--8 {
+  background-color: crimson;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.container--2 .el--1 {
+  background-color: blueviolet;
+}
+.container--2 .el--2 {
+  background-color: orangered;
+}
+.container--2 .el--3 {
+  background-color: green;
+  justify-self: end;
+  align-self: end;
+  /*height: 150px;*/
+}
+.container--2 .el--4 {
+  background-color: goldenrod;
+}
+.container--2 .el--5 {
+  background-color: palevioletred;
+}
+.container--2 .el--6 {
+  background-color: steelblue;
+}
+.container--2 .el--7 {
+  background-color: yellow;
+  height: 200px;
+}
+.container--2 .el--8 {
+  background-color: crimson;
+}
+
+.container--1 {
+  /* STARTER */
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 60px;
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+
+  /* CSS GRID */
+}
+
+.container--2 {
+  /* STARTER */
+  background-color: black;
+  font-size: 40px;
+  margin: 100px;
+
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+
+  /* CSS GRID */
+}
